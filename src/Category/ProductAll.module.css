@@ -1,0 +1,25 @@
+/* Container for the entire section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title Section */
+.titleSection {
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+}

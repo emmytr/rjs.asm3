@@ -1,0 +1,82 @@
+.shopContainer {
+    padding: 20px;
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.shopLayout {
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 20%;
+    padding: 15px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.sidebar h4 {
+    padding: 5px 10px;
+    background-color: rgb(216, 215, 215);
+    margin: 0;
+
+}
+
+.sidebar li {
+    cursor: pointer;
+    padding: 8px;
+    margin: 5px 0;
+    color: grey;
+
+}
+
+.sidebar li:hover {
+    color: burlywood;
+
+}
+
+/* Product Section */
+.productSection {
+    width: 80%;
+    padding: 15px;
+}
+
+/* Filters (Search & Sorting Box) */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.searchBox {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sortBox {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}

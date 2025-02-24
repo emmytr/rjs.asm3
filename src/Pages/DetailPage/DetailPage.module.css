@@ -1,0 +1,197 @@
+/* Pop-up Content Box */
+.popupContent {
+    margin-top: 20px;
+    background: white;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Stack elements in a column */
+    gap: 20px;
+    font-style: italic;
+
+}
+
+/* Flex container for image and details (2 columns) */
+.popupTop {
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the top */
+    gap: 20px;
+    width: 100%;
+}
+
+/* Ensure image and details stay in two columns */
+.popupContent img {
+    width: 40%;
+    height: auto;
+    flex-shrink: 0;
+    border-color: none
+}
+
+/* Product Details (All text in one column) */
+.popupDetails {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #5a5b5d;
+    flex: 1;
+    /* Allow it to take remaining space */
+}
+
+.popupDetails h2 {
+    color: black;
+    font-size: 30px;
+}
+
+.popupDetails h3 {
+
+    margin: 0
+        /* Small spacing between text elements */
+}
+
+
+.detailButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    width: 7rem;
+    font-style: italic;
+    border: 1px solid black;
+}
+
+
+.detailButton:hover {
+    background-color: #5d5c5a;
+
+}
+
+.cartActions {
+    display: flex;
+    align-items: center;
+    /* Adjust spacing between quantity selector and button */
+    margin-top: 15px;
+
+}
+
+
+.quantityContainer {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    /* Keep label and controls in one line */
+    gap: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    border: #020303;
+    /* Space between label and input box */
+    border: 1px solid #ccc;
+    color: #5a5b5d;
+}
+
+.quantityWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 150px;
+    color: #5a5b5d;
+    border: 0.5px solid #ccc;
+    border-right: none;
+    padding: 0px 5px
+}
+
+/* Hide default spinner */
+.quantityInput {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    outline: none;
+    flex-grow: 1;
+
+}
+
+.quantityInput::-webkit-inner-spin-button,
+.quantityInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Quantity Label Inside Input */
+.quantityLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5a5b5d;
+    font-weight: 200;
+}
+
+/* Custom Left & Right Buttons */
+.quantityButton {
+
+
+    padding: 8px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.quantityButton:hover {
+    background: #ddd;
+}
+
+/* Move input text to the right */
+
+.productDescription {
+
+    white-space: pre-line;
+    /* Preserve \n as line breaks */
+    word-wrap: break-word;
+    /* Ensure long words wrap */
+    overflow-wrap: break-word;
+    /* Ensure long words wrap */
+    line-height: 15px;
+    /* Set line spacing */
+    font-size: 13px;
+    display: block;
+    max-width: 100%;
+    /* Ensure it wraps properly within container */
+
+}
+
+.shortDesc {
+    line-height: 15px;
+    font-size: 13px;
+}
+
+/* Place longDescContainer below */
+.longDescContainer {
+
+    color: #5a5b5d
+}
+
+.longDesc {
+    margin-top: 20px;
+    background-color: #020303;
+    color: #f0f0f0 !important;
+    padding: 5px 20px;
+    width: 13rem;
+
+}
+
+.productDescription::first-line {
+    text-transform: uppercase;
+
+}

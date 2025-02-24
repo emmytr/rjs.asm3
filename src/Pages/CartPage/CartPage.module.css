@@ -1,0 +1,263 @@
+/* Cart Page Container */
+.cartContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    gap: 20px;
+    font-style: italic;
+
+}
+
+.cartList {
+    width: 70%
+}
+
+.title {
+    padding: 20px 0;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background: #f8f9fa;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+
+.bannerTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.bannerRoute {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.cartItem {
+
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.title span,
+.cartItem span {
+    flex: 1;
+    /* Equal width for all items */
+    text-align: center;
+}
+
+
+/* Image Styling */
+.cartItem span img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Quantity Styling */
+.quantityWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quantityWrapper button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px
+        /* Optional: Adjust padding to make buttons more clickable */
+}
+
+.quantityButton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+
+/* Remove button */
+.removeButton {
+
+    color: grey;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.removeButton:hover {
+    background: #dfa7a7;
+    color: white
+}
+
+/* Right section (Order Summary) */
+.orderSummary {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.orderSummary h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.totalPrice {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Buttons */
+.actionButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.continueShopping {
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.continueShopping:hover {
+    color: rgb(168, 160, 52)
+}
+
+.checkoutButton {
+    color: black;
+    border: solid 1px black;
+    padding: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.checkoutButton:hover {
+    background: rgb(67, 64, 64);
+    color: white
+}
+
+.orderSummary {
+    width: 30%;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.orderSummary>div:first-child {
+
+    border-bottom: 1px solid #ddd;
+    padding-top: 20px;
+
+}
+
+.orderSummary div {
+    padding: 10px 0;
+    font-size: medium;
+    font-weight: lighter;
+
+}
+
+.orderItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-style: italic;
+
+}
+
+/* Name takes 70% width */
+.orderItem span:first-child {
+    flex: 7;
+    white-space: nowrap;
+    /* Prevents wrapping */
+}
+
+/* Price & Quantity take 30% width */
+.orderItem span:last-child {
+    flex: 3;
+    text-align: right;
+    /* Aligns to the right */
+    white-space: nowrap;
+}
+
+/* Coupon Input and Button */
+.couponContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.couponInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    width: 100%
+}
+
+.couponInput:focus {
+    border-color: #28a745;
+}
+
+.applyCouponButton {
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.applyCouponButton:hover {
+    background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cartContainer {
+        flex-direction: column;
+    }
+
+    .cartItems,
+    .orderSummary {
+        width: 100%;
+    }
+}

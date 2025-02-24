@@ -1,0 +1,44 @@
+.header {
+    width: 70%;
+    margin: 0 auto;
+    /* Centers the content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 30px;
+    position: relative;
+}
+
+/* Left and Right Nav */
+.navLeft,
+.navRight {
+    display: flex;
+    gap: 20px;
+    /* Space between buttons */
+}
+
+/* Logo Centered */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+button:hover {
+    color: #f39c12;
+}

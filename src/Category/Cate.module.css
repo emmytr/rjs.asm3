@@ -1,0 +1,61 @@
+.cateContainer {
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: italic;
+
+
+}
+
+.catImg {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* First row: 2 images */
+.row1 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.row1 img {
+    width: 50%;
+    height: auto;
+}
+
+/* Second row: 3 images */
+.row2 {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.row2 img {
+    width: 33.33%;
+    height: auto;
+}
+
+/* Responsive: Stack images on smaller screens */
+@media (max-width: 768px) {
+
+    .row1 img,
+    .row2 img {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .row1,
+    .row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row1 img,
+    .row2 img {
+        width: 100%;
+    }
+}

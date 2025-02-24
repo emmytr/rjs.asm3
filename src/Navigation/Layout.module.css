@@ -1,0 +1,13 @@
+.main {
+    width: 70%;
+    margin: 0 auto;
+    /* Centers the content */
+    display: flex;
+    flex-direction: column;
+    /* Ensure vertical stacking */
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+    position: relative;
+}

@@ -1,0 +1,159 @@
+.liveChatContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Floating Chat Button */
+.chatToggleBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chatToggleBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Chat Popup */
+.chatPopup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 500px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Header */
+.chatHeader {
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #ece6e6;
+    justify-content: space-between;
+    /* Pushes items to both ends */
+}
+
+.chatHeader div {
+    background-color: #ccc;
+    font-style: italic;
+    padding: 5px;
+    /* Ensures background only wraps text */
+    display: inline-block;
+    margin-right: 8px;
+    /* Pushes it to the right */
+
+}
+
+/* Chat Body */
+.chatBody {
+    padding: 15px;
+    flex: 1;
+    overflow-y: auto;
+    font-style: italic;
+}
+
+/* Chat Footer */
+.chatFooter {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.chatFooter input {
+    flex: 1;
+    padding: 5px;
+    margin: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatFooter button {
+    margin-left: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chatFooter button:hover {
+    background: #0056b3;
+}
+
+.adminMessage {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 5px;
+
+}
+
+.adminAvatar {
+    font-size: 24px;
+    color: grey;
+    padding-top: 5px;
+}
+
+
+.adminAvatarFooter {
+    font-size: 30px;
+    color: grey;
+    margin-top: 7px;
+}
+
+/* Customer Message (Right-aligned) */
+.chatSupport {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.chatSupport p {
+    background-color: rgb(194, 201, 206);
+    color: black;
+    padding: 5px 8px;
+    border-radius: 5px;
+    max-width: 75%;
+    text-align: left;
+}
+
+
+
+/* Customer Message (Right-aligned) */
+.chatCustomer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.chatCustomer p {
+    background-color: rgb(50, 163, 244);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    max-width: 75%;
+    text-align: left;
+}
